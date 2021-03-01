@@ -40,7 +40,15 @@ for j in range (0, int(timesToRun)):
     print("Door 2: ", doors[1].object)
     print("Door 3: ", doors[2].object)
 
-    if chosenDoor.object is "car":
+    newChosenDoor = Door(99, 'n/a')
+
+    for door in doors:
+        if door.num != doorNum and door.num != openedDoor.num:
+            newChosenDoor = door
+
+
+
+    if newChosenDoor.object is "car":
         print("WIN")
         numberOfWins += 1
 
