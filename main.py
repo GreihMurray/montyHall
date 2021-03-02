@@ -54,6 +54,6 @@ for j in range (0, int(timesToRun)):
 
     print("////////////////////////////////////////////////////////////////")
 
-winPercent = numberOfWins/int(timesToRun)
+winPercent = (numberOfWins/int(timesToRun)) * 100
 
-print(winPercent)
+print("Win Percentage: ", winPercent, "%", sep='')
