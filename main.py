@@ -56,4 +56,5 @@ for j in range (0, int(timesToRun)):
 
 winPercent = (numberOfWins/int(timesToRun)) * 100
 
+print("Simulated ", timesToRun, " iterations of the Monty Hall Problem", sep="")
 print("Win Percentage: ", winPercent, "%", sep='')
